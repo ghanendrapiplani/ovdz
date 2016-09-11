@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\ghanendra\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\support-annotations-23.2.1_aba96a9f07dc6ee756889818278e9d3a294fcee6.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\gson-2.7_d672ce19844ac35aa3be0e5879b3846ed6d3392a.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.1.0_88cbbbf5a1693c245ab62173c0b01006e5e68f4f.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_9793a109cacc0853ff1ec055dfb4a1325fed8f03.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\internal_impl-23.2.1_9ceaf4aae7bf0ba939b54c0b2cba0d1431ab7cdd.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.mcxiaoke.volley\library-aar\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.mcxiaoke.volley-library-aar-1.0.0_c021ebb3a8d57cb9f75833b7c5f584b242c4edb8.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.2.1_ad295bd4d3e15feddf9524f043198193b6843827.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.1.0_543d259587995d8d1ea9a4e9a0f0b7b5201378c5.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.astuetz\pagerslidingtabstrip\1.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.astuetz-pagerslidingtabstrip-1.0.1_6e1642db49879d0edadf477d5691a3fe3b049a6d.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.android.support\design\23.0.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.0.1_de635bef23c55159b66d30db77f1483d75b3653c.jar" />
+    </item>
+    <item
+        jar="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\ghanendra\Downloads\O2Vidz_v8\O2Vidz\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.2.1_27ed11136082a9f5ad8fc488bca32632f02607f8.jar" />
+    </item>
+
+</items>

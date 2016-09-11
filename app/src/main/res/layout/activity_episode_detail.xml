@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/cnctnAvailale_episode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/cnctn_episode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/episode_grid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/movie_grid">
+
+                    <include
+                        android:id="@+id/blurr_episode"
+                        layout="@layout/blurr_image_background" />
+
+                    <!--<include-->
+                    <!--android:id="@+id/toolbar_Episode"-->
+                    <!--layout="@layout/detail_toolbar"></include>-->
+
+                    <LinearLayout
+                        android:id="@+id/episode_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_ten"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/padding_ten">
+
+                        <TextView
+                            android:id="@+id/episode_format"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/Tv_Shows"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_normal" />
+
+                        <ImageView
+                            android:id="@+id/episode_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/padding_three"
+                            android:background="@drawable/title_arrow" />
+
+                        <TextView
+                            android:id="@+id/episode_seasonName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_normal" />
+
+                        <ImageView
+                            android:id="@+id/episode_heart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/favr" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/episode_title"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true">
+
+                        <ImageView
+                            android:id="@+id/episode_image"
+                            android:layout_width="@dimen/movie_image_width"
+                            android:layout_height="@dimen/movie_image_height"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/padding_twnty"
+                            android:background="@drawable/movie_border"
+                            android:scaleType="fitXY" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/episode_title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/padding_twnty">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/cast_episode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:text="Cast : "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+
+                                <TextView
+                                    android:id="@+id/cast_nameEpisode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:ellipsize="end"
+                                    android:maxLines="4"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/episode_genre"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:text="Genre : "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+
+                                <TextView
+                                    android:id="@+id/genre_detailEpisode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/runtime_episode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:text="Runtime : "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+
+                                <TextView
+                                    android:id="@+id/runtime_detailEpisode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/rating_episode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:paddingBottom="@dimen/padding_five"
+                                    android:text="@string/rating"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+
+                                <TextView
+                                    android:id="@+id/rating_detailEpisode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <TextView
+                                    android:id="@+id/view_episode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:text="Views : "
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+
+                                <TextView
+                                    android:id="@+id/views_detailEpisode"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.7"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/desc_viewEpisode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/episode_grid"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_ten">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_five"
+                        android:text="DESCRIPTION"
+                        android:textColor="@color/purple" />
+
+
+                    <LinearLayout
+                        android:id="@+id/collapseDes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/colapse_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/desc_episode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text=""
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/font_small" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/collapse_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:padding="@dimen/padding_ten"
+                            android:src="@drawable/down_img" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/expand_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ExpandDesc_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/expand_descEpisode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/font_small" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/expand_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:padding="@dimen/padding_ten"
+                            android:src="@drawable/up_arrow" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/episode_linkLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc_viewEpisode"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/padding_ten">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/imbd"
+                        android:textAllCaps="true"
+                        android:textColor="@color/purple"
+                        android:textSize="@dimen/font_normal" />
+
+                    <TextView
+                        android:id="@+id/link_episode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_five"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/font_small"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_link"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view"
+                    android:layout_below="@+id/episode_linkLayout"
+                    android:layout_marginTop="@dimen/padding_ten"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/detail_episode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_link"
+                    android:layout_marginTop="@dimen/padding_twnty"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lm"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/text_seasonName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/padding_three"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/hypen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/padding_five"
+                                android:layout_toRightOf="@+id/text_seasonName"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/text_seasonNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/padding_three"
+                                android:layout_toRightOf="@+id/hypen"
+                                android:textAllCaps="true"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/font_normal" />
+
+                            <TextView
+                                android:id="@+id/hypen1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/padding_five"
+                                android:layout_toRightOf="@+id/text_seasonNumber"
+                                android:gravity="center"
+                                android:text="--"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/font_normal" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text_episodeNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lm"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_three"
+                            android:textAllCaps="true"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/font_normal" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/dwnldMp4"
+                        android:layout_width="@dimen/button_tv"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_ten"
+                        android:layout_marginTop="@dimen/padding_twnty"
+                        android:background="@color/purple"
+                        android:drawableLeft="@drawable/tv_down"
+                        android:paddingLeft="@dimen/padding_ten"
+                        android:text="@string/btnMp4"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/noDwnld_mp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/dwnldGp3"
+                        android:layout_width="@dimen/button_tv"
+                        android:layout_height="@dimen/button_height"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_ten"
+                        android:layout_marginTop="@dimen/padding_twnty"
+                        android:background="@color/purple"
+                        android:drawableLeft="@drawable/tv_down"
+                        android:paddingLeft="@dimen/padding_ten"
+                        android:text="@string/btngp3"
+                        android:textAlignment="center"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/noDwnld_gp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/padding_thirty"
+                        android:singleLine="false"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/font_normal"
+                        android:textStyle="italic" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/nocnct_episode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nocntcn_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/connection_error"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_large" />
+
+        <Button
+            android:id="@+id/nocnctn_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nocntcn_text"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@color/feedback_title"
+            android:text="@string/retry"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_episode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"></RelativeLayout>
+
+
+</RelativeLayout>

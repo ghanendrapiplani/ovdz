@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="21"
+    density="xxxhdpi"
+    format="7"
+    timestamp="83759869548026"
+    token="4779843879560753290" >
+
+    <task
+        name="javac"
+        duration="613" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="327" />
+    <task
+        name="verifier"
+        duration="63" />
+
+    <artifact
+        location="/Users/admin/Desktop/document/O2Vidz/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="83759869548026" >
+        <artifact
+            location="/Users/admin/Desktop/document/O2Vidz/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

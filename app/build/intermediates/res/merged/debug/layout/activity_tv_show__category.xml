@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.o2cinemas.fragment.Bollywood_Fragment">
+
+    <RelativeLayout
+        android:id="@+id/cnctnAvailable_categoryTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/toolbar_tvshowCategory"
+                    layout="@layout/toolbar" />
+
+                <android.support.v4.widget.DrawerLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/drawer_layoutCategory"
+                    android:layout_below="@+id/toolbar_tvshowCategory">
+
+                    <include layout="@layout/layout_group_details"/>
+
+                    <ListView
+                        android:id="@+id/left_drawer"
+                        android:layout_width="@dimen/drawer_width"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:background="@drawable/drawer_background"
+                        android:divider="@color/white"
+                        android:dividerHeight="@dimen/drawer_divider"
+                        android:scrollbars="none"/>
+                </android.support.v4.widget.DrawerLayout>
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cnctn_categoryTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/intenettext_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No Internet Connection"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_large" />
+
+        <Button
+            android:id="@+id/button_discnctTvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conctn_intenet"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:background="@color/feedback_title"
+            android:text="@string/retry"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_large" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loading_categoryTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"></RelativeLayout>
+</RelativeLayout>

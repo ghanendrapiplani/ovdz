@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#8F44AD</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="pink">#ED008C</color>
+    <color name="purple">#8F44AD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#7B7B7B</color>
+    <color name="purple_dark">#773194</color>
+    <color name="purple_tab">#67297F</color>
+    <color name="drawer">#250141</color>
+    <color name="feedback_title">#D5D3D4</color>
+    <color name="about_centre">#8E307E</color>
+    <color name="about_start">#9F3170</color>
+    <color name="opacity_toolbar">#80000000</color>
+    <color name="expandable_background">#EEEEEE</color>
+</resources>
